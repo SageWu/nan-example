@@ -1,0 +1,23 @@
+{
+  "name": "nan-example",
+  "version": "1.0.0",
+  "description": "nodejs addon examples implemented via nan.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SageWu/nan-example.git"
+  },
+  "keywords": [
+    "nodejs",
+    "addon",
+    "nan"
+  ],
+  "author": "SageWu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SageWu/nan-example/issues"
+  },
+  "homepage": "https://github.com/SageWu/nan-example#readme"
+}
