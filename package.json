@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/SageWu/nan-example/issues"
   },
-  "homepage": "https://github.com/SageWu/nan-example#readme"
+  "homepage": "https://github.com/SageWu/nan-example#readme",
+  "dependencies": {
+    "nan": "^2.14.2"
+  }
 }
