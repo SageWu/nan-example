@@ -9,7 +9,9 @@ void GetString(const Nan::FunctionCallbackInfo<Value>& info) {
 
 // 初始化模块
 void Init(Local<Object> exports) {
+  // 获取创建 exports 的 context
   Local<Context> context = exports->CreationContext();
+  // exports 设置属性
   exports->Set(
     context,
     Nan::New("getString").ToLocalChecked(),

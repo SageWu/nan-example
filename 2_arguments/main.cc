@@ -3,10 +3,12 @@
 using namespace v8;
 
 void Add(const Nan::FunctionCallbackInfo<Value>& info) {
+  // 获取当前 context
   Local<Context> context = info.GetIsolate()->GetCurrentContext();
 
   // 检查参数
   if (info.Length() < 2) {
+    // 抛异常
     Nan::ThrowError("需传入2个数值");
     return;
   }
@@ -22,7 +24,9 @@ void Add(const Nan::FunctionCallbackInfo<Value>& info) {
 
 // 初始化模块
 void Init(Local<Object> exports) {
+  // 获取创建 exports 的 context
   Local<Context> context = exports->CreationContext();
+  // exports 设置属性
   exports->Set(
     context,
     Nan::New("add").ToLocalChecked(),
