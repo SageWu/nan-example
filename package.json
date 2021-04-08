@@ -22,5 +22,8 @@
   "homepage": "https://github.com/SageWu/nan-example#readme",
   "dependencies": {
     "nan": "^2.14.2"
+  },
+  "devDependencies": {
+    "cmake-js": "^6.1.0"
   }
 }
